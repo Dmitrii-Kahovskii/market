@@ -1,0 +1,49 @@
+.slider-wrapper {
+    position: relative;
+    // margin-left:auto;
+    // margin-right:auto;
+    // margin-bottom: 80px;
+    // max-width:900px;
+    // height:600px;
+    background-color:#d8eefd
+}
+
+.nav-btn {
+    // display: none;
+    position: absolute;
+    top: 50%;
+    // width: 54px;
+    // height: 54px;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+   /* Mobile XS */
+   @media (max-width: 599px) {
+   display: none;
+   }
+} 
+.nav-btn-left {
+    left: 23px;
+    z-index: 1;
+}
+.nav-btn-right {
+    right: 23px;
+    z-index: 1;
+}
+
+.nav-btn .icon-circle {
+    fill:#F5F5F5;
+}
+
+.nav-btn .icon-path {
+    stroke:#00C470;
+    stroke-width:2px;
+}
+.nav-btn:hover .icon-circle {
+    fill:#00C470;
+ }
+
+ .nav-btn:hover .icon-path {
+     stroke: #fff
+ }

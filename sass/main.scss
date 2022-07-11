@@ -1,0 +1,27 @@
+// Base
+@import "./base/vars";
+@import "./base/reset";
+@import "./base/base";
+@import "./base/stylesheet";
+
+// theme
+@import "./owl-theme/owl-theme";
+// @import "./owl-theme/owl-theme-red";
+
+// Blocks
+@import "./blocks/header";
+@import "./blocks/logo";
+@import "./blocks/footer";
+@import "./blocks/btn";
+@import "./blocks/search";
+@import "./blocks/products";
+@import "./blocks/nav-icon";
+@import "./blocks/nav";
+@import "./blocks/button-round";
+
+@import "./blocks/catalog";
+@import "./blocks/filtr";
+@import "./blocks/big-card-product";
+@import "./blocks/specification-table";
+
+

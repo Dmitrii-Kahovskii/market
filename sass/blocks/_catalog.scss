@@ -1,0 +1,247 @@
+.transition-wrapper {
+margin-top: -112px;
+    /* Mobile */
+    @media (max-width: 899px) {
+    margin-top: -50px;
+    }
+}
+.transition {
+    display: flex;
+    column-gap: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #C4C4C4;
+    /* Mobile */
+    @media (max-width: 899px) {
+    }
+}
+.transition__item {
+    transition: 0.2s ease-in;
+    position: relative;
+
+}
+
+.transition__item:not(:last-child):after {
+    content: url("../../img/arrow/back-rihgt.svg");
+    position: absolute;
+    margin-left: 2px;
+}
+
+.transition__item:hover {
+    color:#626262 ;
+ 
+}
+.transition__img {
+}
+
+.catalog {
+    padding-top: 41px;
+    padding-bottom: 100px;
+    /* Mobile */
+    @media (max-width: 899px) {
+    padding-bottom: 10px;
+    }
+}
+
+.catalog__header {
+    margin-bottom: 26px;
+
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.parameters {
+    margin-bottom: 47px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Tablet */
+    @media (max-width: 1199px) {
+    margin-bottom: 20px;
+    }
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        margin-bottom: 0;
+    flex-direction: column;
+    row-gap: 5px;
+    align-items: center;
+    }
+}
+.btn-group-row {
+    margin-right: 10px;
+    display: flex;
+    column-gap: 10px;
+    /* Mobile */
+    @media (max-width: 899px) {
+    margin-right: 20px;
+    }
+    /* Mobile XS */
+    @media (max-width: 599px) {
+    column-gap: 5px;
+    }
+}
+
+.btn-row {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #2F3035;
+    padding: 0 23px;
+    opacity: 0.7;
+
+    background: #F0F0F4;
+    border-radius: 3px;
+    /* Mobile */
+    @media (max-width: 899px) {
+    line-height: 20px;
+    padding: 0 10px;
+    }
+    /* Mobile XS */
+    @media (max-width: 599px) {
+    font-size: 12px;
+    }
+
+    &:hover,:active {
+        opacity: 1;
+        background: #c0c0c3;
+    }
+}
+
+.parametres-wraper {
+    display: flex;
+    justify-items: center;
+    column-gap: 34px;
+    /* Mobile */
+    @media (max-width: 899px) {
+    column-gap: 15px;
+    }
+}
+.select {
+    width: 100%;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: 1.5px solid  #D7D9DF;
+    padding: 0px 41px 0px 22px;
+    outline: none;
+    cursor: pointer;
+
+    font-weight: 400;
+    font-size: 14px;
+    // line-height: 33px;
+    height: 33px;
+    /* Mobile */
+    @media (max-width: 899px) {
+        font-size: 12px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+.select-wrapper {
+    position: relative;
+    // width: 178px;
+}
+.select-wrapper::after {
+    content:url(../../img/arrow/back.svg);
+    position: absolute;
+    right: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    /* Mobile */
+    @media (max-width: 899px) {
+    display: none;
+    }
+}
+.select-wrapper:hover ~ .select-wrapper::after {
+    transform: scale(1,-1);
+}
+.select-item {
+}
+
+.sorting {
+   display: flex;
+   column-gap: 10px;
+   align-items: center;
+   /* Mobile XS */
+   @media (max-width: 599px) {
+   display: none;
+   }
+}
+.sorting-btn svg {
+    g {
+        fill:#2F3035;
+        opacity:0.3;
+        opacity: 1;
+  }
+        stroke:#2F3035;
+        opacity:0.3;
+        &:hover {
+            opacity: 1;
+        }
+}
+
+.sorting-btn.active-grid svg {
+    opacity: 1;
+}
+
+.flex {
+    display: flex;
+    /* Mobile */
+    @media (max-width: 899px) {
+        justify-content: center;
+        column-gap: 30px;
+    & .products-card-product {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    }
+}
+
+.wrapper-pagination {
+    margin-top: 69px;
+    display: flex;
+    justify-content: center;
+        /* Mobile */
+    @media (max-width: 899px) {
+    display: none;
+    }
+
+}
+.pagination {
+    display: flex;
+    column-gap: 30px;
+
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+.page-item {
+    color: #C4C4C4;
+}
+
+.page-item.active {
+    padding-left: 10px;
+    padding-right: 10px;
+ 
+    border: 2px solid #1C62CD;
+    
+    color: #1C62CD;
+}
+
+.disabled {
+}
+.page-link {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.page-link:hover {
+    color: #1C62CD;
+}
+
+

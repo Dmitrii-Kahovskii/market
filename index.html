@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<!-- encoding -->
+		<meta charset="UTF-8" />
+		<!-- Mobile support -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Title and SEO -->
+		<title>Стартовый шаблон</title>
+		<meta name="description" content="Описание страницы" />
+		<meta name="keywords" content="ключевые слова, фразы" />
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<!-- Open Graph -->
+		<!-- <meta property="og:url" content="https://webcademy.ru/" /> -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="" />
+		<meta property="og:description" content="" />
+		<meta property="og:image" content=""/>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;600;700&display=swap');
+			</style>
+				<!-- OwlCarousel CSS styles -->
+	<link rel="stylesheet" href="libs/OwlCarousel2/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="./sass/owl-theme/_owl-theme.scss">
+	</head>
+	<body>
+<div class="header">
+	<div class="container">
+		<div class="header-top">
+			<div class="header-top__wrapper-nav-top">
+				<nav class="nav-top">
+					<a href="#" class="nav-top-item">Магазины</a>
+					<a href="#" class="nav-top-item">Акции</a>
+					<a href="#" class="nav-top-item">Доставка и оплата</a>
+				</nav>		
+			</div>
+			<button class="nav-icon">
+				<div class="nav-icon__middle"></div>
+		    </button>
+					<!-- Навигация -->
+		<nav class="nav">
+			<div class="nav__top">навигация по сайту</div>
+			<ul class="nav__list">
+				<li><a href="./index.html">Главная</a></li>
+				<li><a href="./jet-skis.html">Гидроциклы</a></li>
+				<li><a href="#">Доставка и оплата</a></li>
+				<li><a href="#">Цены</a></li>
+				<li><a href="#">Отзывы клиентов</a></li>
+			</ul>
+		</nav>
+
+			<div class="header-top__wrapper-icon">
+				<picture>				
+					<source media="(max-width: 900px)" srcset="./img/icons/drive-moto.png">
+					<source media="(max-width: 1600px)" srcset="./img/icons/logo.svg">
+					<img src="./img/icons/logo.svg" alt="logo">
+				</picture>
+			</div>
+			<a class="header-top__wrapper-map">
+				<img src="./img/icons/map-icons.svg" alt="">
+				<p>Москва,  ул. Науки  25</p>
+			</a>
+			<div class="header-top__wrapper-linc-icons">
+				<a href="#" class="header-top__item">
+					<svg class="heart" width="24" height="22" viewBox="0 0 24 22" xmlns="http://www.w3.org/2000/svg">
+					<path d="M12 8.22892C12.234 7.10892 13.547 1.99992 17.382 1.99992C19.602 1.99992 22 3.55092 22 7.00292C22 10.9099 18.373 15.4729 12 19.6319C5.627 15.4729 2 10.9099 2 7.00292C2 3.51892 4.369 1.99792 6.577 1.99792C10.5 1.99792 11.722 7.12392 12 8.22892ZM0 7.00292C0 11.0709 3.06 16.4839 12 21.9999C20.94 16.4839 24 11.0709 24 7.00292C24 -0.959077 14.352 -2.02508 12 3.26592C9.662 -1.99608 0 -1.00408 0 7.00292Z" />
+					</svg>
+				</a>
+				<a href="#" class="header-top__item">
+					<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+					<path d="M20.8225 18.096C17.3835 17.302 14.1825 16.606 15.7325 13.678C20.4525 4.766 16.9835 0 12.0005 0C6.91849 0 3.53649 4.949 8.26849 13.678C9.86549 16.623 6.54349 17.319 3.17849 18.096C0.105486 18.806 -0.00951398 20.332 0.000486018 23L0.00448602 24H23.9945L23.9985 23.031C24.0105 20.343 23.9065 18.809 20.8225 18.096Z" />
+					</svg>
+				</a>
+				<a href="#" class="header-top__item header-top__item--quantity">
+					<svg
+					 width="30" height="23" viewBox="0 0 30 23" xmlns="http://www.w3.org/2000/svg">
+					<path 
+					d="M29.999 0L29.0703 2.5H26.659L22.3165 17.5H5.76777L-0.000976562 3.75H21.014L20.309 6.25H3.75902L7.43027 15H20.4653L24.7553 0H29.999ZM10.624 18.75C9.58902 18.75 8.74902 19.59 8.74902 20.625C8.74902 21.6612 9.58902 22.5 10.624 22.5C11.659 22.5 12.499 21.6612 12.499 20.625C12.499 19.59 11.659 18.75 10.624 18.75ZM19.249 10L16.874 18.75C15.839 18.75 14.999 19.5888 14.999 20.625C14.999 21.6612 15.839 22.5 16.874 22.5C17.909 22.5 18.749 21.6612 18.749 20.625C18.749 19.59 17.909 18.75 16.874 18.75L19.249 10Z"/>
+					</svg>
+					
+					<span class="counter">1</span>
+				</a>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<nav class="nav-bottom">
+				<a href="#" class="nav-bottom_item">Квадроциклы</a>
+				<a href="#" class="nav-bottom_item">Катера</a>
+				<a href="./jet-skis.html" class="nav-bottom_item">Гидроциклы</a>
+				<a href="#" class="nav-bottom_item">Лодки</a>
+				<a href="#" class="nav-bottom_item">Вездеходы</a>
+				<a href="#" class="nav-bottom_item">Снегоходы</a>
+				<a href="#" class="nav-bottom_item">Двигатели</a>
+				<a href="#" class="nav-bottom_item">Запчасти</a>
+			</nav>
+		</div>
+		<div class="header-banner">
+			<div class="banner">
+				<div class="owl-carousel owl-theme" id="photo-carousel">
+					<img src="./img/banner/banner.jpg" alt="">
+					<img src="./img/banner/kawazaki-jetski-1.png" alt="">
+				</div>
+				<button class="nav-btn nav-btn-left">
+					<svg 
+					width="16" height="29" viewBox="0 0 16 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M1.9673 14.1924L14.9422 1.37269C15.2613 1.05741 15.2613 0.551755 14.9422 0.236466C14.6231 -0.0788221 14.1113 -0.0788221 13.7922 0.236466L0.239328 13.6273C-0.0797759 13.9426 -0.0797759 14.4482 0.239328 14.7635L13.7922 28.1484C13.9487 28.3031 14.1595 28.3864 14.3642 28.3864C14.5689 28.3864 14.7796 28.309 14.9362 28.1484C15.2553 27.8331 15.2553 27.3275 14.9362 27.0122L1.9673 14.1924Z" fill="white"/>
+					</svg>
+					</button>
+				<button class="nav-btn nav-btn-right">
+					<svg
+					 width="17" height="29" viewBox="0 0 17 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M15.8936 13.632L2.33608 0.236548C2.01686 -0.0788495 1.50491 -0.0788495 1.1857 0.236548C0.866485 0.551946 0.866485 1.05777 1.1857 1.37317L14.1651 14.1974L1.1857 27.0216C0.866485 27.337 0.866485 27.8428 1.1857 28.1582C1.3423 28.3129 1.5531 28.3962 1.75788 28.3962C1.96266 28.3962 2.17346 28.3189 2.33005 28.1582L15.8876 14.7627C16.2068 14.4533 16.2068 13.9415 15.8936 13.632Z" fill="white"/>
+					</svg>				
+					</button>
+			</div>
+			<a class="banner-stock" href="#">
+				<p class="banner-stock__stock">акция</p>
+				<div class="banner-stock__price">
+					<div class="banner-stock__price-new">
+						<p>190 000</p>
+						<span>&#8381</span>
+					</div>
+					<div class="banner-stock__price-old">
+						<p> 225 000</p>
+						<span>&#8381</span>
+					</div>
+				</div>
+				<img src="./img/banner/boat-motor.jpg" alt="" class="banner-stock__img">
+				<p class="banner-stock__description">Лодочный мотор <br>
+					Suzuki DF9.9BRS</p>
+					<p class="banner-stock__conditions">Акция действует до <br> <span>31.08.2020</span></p>
+			</a>
+		</div>
+		</div>
+	</div>
+<div class="search">
+	<div class="container">	
+		<div class="type-search">
+		<input type="radio" class="number" id="number"></input>
+		<label class="type-search__label" id="number">Поиск по  номеру</label>
+		<input type="radio" class="mark" id="mark"></input>
+		<label class="type-search__label" id="mark">Поиск по марке</label>
+		<input type="radio" class="name" id="name"></input>
+		<label class="type-search__label" id="name">Поиск по названию товара</label>
+	</div>
+	<form class="form">
+		<input class="input" type="text" placeholder="Введите марку ">
+		<button class="button button--none" type="submit">искать</button>
+		<button class="button-img" type="submit"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M24.0889 22.2056L18.4027 16.8577C20.2569 15.0556 21.4313 12.6142 21.4313 9.88208C21.4313 4.41787 16.7339 0 10.9241 0C5.1143 0 0.416992 4.41787 0.416992 9.88208C0.416992 15.3463 5.1143 19.7642 10.9241 19.7642C13.1492 19.7642 15.2506 19.0666 16.9812 17.9621L22.791 23.4263C22.9764 23.6007 23.2236 23.6589 23.4709 23.6589C23.7181 23.6589 23.9653 23.6007 24.1507 23.4263C24.4598 23.0776 24.4598 22.5544 24.0889 22.2056ZM2.27119 9.88208C2.27119 5.40608 6.16501 1.7439 10.9241 1.7439C15.6832 1.7439 19.5771 5.40608 19.5771 9.88208C19.5771 14.3581 15.6832 18.0203 10.9241 18.0203C6.16501 18.0203 2.27119 14.3581 2.27119 9.88208Z" fill="#2F3035"/>
+			</svg>
+			</button>
+	</form>
+	<div class="load-type">
+		<a href="#" class="card"><div class="text"><p>Квадроциклы</p><span>Подробее</span></div><img src="./img/load-type/atv.jpg" alt="atv"></a>
+		<a href="#" class="card"><div class="text"><p>Гидроциклы</p><span>Подробее</span></div><img src="./img/load-type/jet-ski.jpg" alt="atv"></a>
+		<a href="#" class="card"><div class="text"><p>Катера</p><span>Подробее</span></div>
+			<picture>
+				<source media="max-width:350px" srcset="./img/load-type/speedboat-350px.jpg">
+				<img src="./img/load-type/speedboat.jpg" alt="atv">
+			</picture>
+		</a>
+		<a href="#" class="card"><div class="text"><p>Снегоходы</p><span>Подробее</span></div><img src="./img/load-type/snowmobile.jpg" alt="atv"></a>
+		<a href="#" class="card"><div class="text"><p>Вездеходы</p><span>Подробее</span></div><img src="./img/load-type/all-terrain-vehicle.jpg" alt="atv"></a>
+		<a href="#" class="card"><div class="text"><p>Двигатели</p><span>Подробее</span></div><img src="./img/load-type/engine.jpg" alt="atv"></a>
+
+	</div>
+	</div>
+</div>
+<div class="products">
+	<div class="container">
+		<h1 class="title">Популярные товары</h1>
+	<div class="products-types-products">
+		<a href="#" class="types-products">запчасти</a>
+		<a href="#" class="types-products">моторы</a>
+		<a href="#" class="types-products">шины </a>
+		<a href="#" class="types-products">электроника</a>
+		<a href="#" class="types-products">инструменты</a>
+		<a href="#" class="types-products">аксессуары </a>
+	</div>
+	<div class="products__card-product-wrapper">	
+		<div class="products-card-product" id="">
+		<a class="card-products" href="#">
+			<span class="hover-block">посмотреть товар</span>
+			<img class="card-products__img-heart" src="./img/icons/heart.svg" alt="heart">
+			<img class="card-products__img" src="./img/products/backpack.jpg" alt="backpack">
+			<p class="card-products__text">Водонепроницаемый Рюкзак</p>
+			<span class="card-products__price">9 800 ₽</span>
+			<div class="card-products__img-wrapper">
+				<img src="./img/icons/basket-white.png" alt="basket-white">
+			</div>
+
+		</a>
+		<a class="card-products card-products--sale" href="#">
+			<span class="hover-block">посмотреть товар</span>
+			<img class="card-products__img-heart" src="./img/icons/heart.svg" alt="heart">
+			<img class="card-products__img" src="./img/products/jacket.jpg" alt="jacket">
+			<p class="card-products__text">Спасательный жилет BRP Men's Airflow PFD</p>
+			<span class="card-products__price">6 900 ₽</span>
+			<div class="card-products__img-wrapper">
+				<img src="./img/icons/basket-white.png" alt="basket-white">
+			</div>
+
+		</a>
+		<a class="card-products" href="#">
+			<span class="hover-block">посмотреть товар</span>
+			<img class="card-products__img-heart" src="./img/icons/heart.svg" alt="heart">
+			<img class="card-products__img" src="./img/products/brp.jpg" alt="backpack">
+			<p class="card-products__text">BRP Audio-Premium <br> System</p>
+			<span class="card-products__price">68 000 ₽</span>
+			<div class="card-products__img-wrapper">
+				<img src="./img/icons/basket-white.png" alt="basket-white">
+			</div>
+		</a>
+		<div class="card-products card-products--sale" href="#">
+			<span class="hover-block">посмотреть товар</span>
+			<img class="card-products__img-heart" src="./img/icons/heart.svg" alt="heart">
+			<img class="card-products__img" src="./img/products/rescue.jpg" alt="backpack">
+			<p class="card-products__text">Спасательное <br> снаряжение</p>
+			<span class="card-products__price">5 800 ₽</span>
+			<div class="card-products__img-wrapper">
+				<img src="./img/icons/basket-white.png" alt="basket-white">
+			</div>
+
+		</a>
+	</div>
+	<button class="products-card-btn products-card-btn-left">
+			<img src="./img/arrow/arrow-left-black.svg" alt="left-black">
+		</button>
+	<button class="products-card-btn products-card-btn-right">
+			<img src="./img/arrow/arrow-right-black.svg " alt="right-black">			
+		</button></div>
+
+	<div class="products-card-product none" id="more">
+		<a class="card-products" href="#">
+			<span class="hover-block">посмотреть товар</span>
+			<img class="card-products__img-heart" src="./img/icons/heart.svg" alt="heart">
+			<img class="card-products__img" src="./img/products/backpack.jpg" alt="backpack">
+			<p class="card-products__text">Водонепроницаемый Рюкзак</p>
+			<span class="card-products__price">9 800 ₽</span>
+			<div class="card-products__img-wrapper">
+				<img src="./img/icons/basket-white.png" alt="basket-white">
+			</div>
+
+		</a>
+		<a class="card-products card-products--sale" href="#">
+			<span class="hover-block">посмотреть товар</span>
+			<img class="card-products__img-heart" src="./img/icons/heart.svg" alt="heart">
+			<img class="card-products__img" src="./img/products/jacket.jpg" alt="jacket">
+			<p class="card-products__text">Спасательный жилет BRP Men's Airflow PFD</p>
+			<span class="card-products__price">6 900 ₽</span>
+			<div class="card-products__img-wrapper">
+				<img src="./img/icons/basket-white.png" alt="basket-white">
+			</div>
+
+		</a>
+		<a class="card-products" href="#">
+			<span class="hover-block">посмотреть товар</span>
+			<img class="card-products__img-heart" src="./img/icons/heart.svg" alt="heart">
+			<img class="card-products__img" src="./img/products/brp.jpg" alt="backpack">
+			<p class="card-products__text">BRP Audio-Premium <br> System</p>
+			<span class="card-products__price">68 000 ₽</span>
+			<div class="card-products__img-wrapper">
+				<img src="./img/icons/basket-white.png" alt="basket-white">
+			</div>
+		</a>
+		<a class="card-products card-products--sale" href="#">
+			<span class="hover-block">посмотреть товар</span>
+			<img class="card-products__img-heart" src="./img/icons/heart.svg" alt="heart">
+			<img class="card-products__img" src="./img/products/rescue.jpg" alt="backpack">
+			<p class="card-products__text">Спасательное <br> снаряжение</p>
+			<span class="card-products__price">5 800 ₽</span>
+			<div class="card-products__img-wrapper">
+				<img src="./img/icons/basket-white.png" alt="basket-white">
+			</div>
+
+		</a>
+	</div>
+<div class="products__wrapper-show-more ">
+	<button type="button" class="show-more" id="show-more">Показать еще</button>
+</div>
+<div class="discounts">
+	<div class="discounts__img-wrapper">
+		<img class="discounts__img" src="./img/load-type/CFMOTO.png" alt="">
+		<img class="discounts__img" src="./img/load-type/Maverick.png" alt="">
+	</div>
+	<div class="discounts__wrapper-text">
+		<h2 class="discounts__title">CКИДКИ <br> на все запчасти <br> до 70%</h2>
+		<a class="discounts__button" href="#">ПОСМОТЕТЬ ВСЕ</a>
+	</div>
+</div>
+<div class="they-also-buy">
+	<h1 class="title">С этим товаром покупают</h1>
+	<div class="products-types-products">
+		<a href="#" class="types-products">запчасти</a>
+		<a href="#" class="types-products">моторы</a>
+		<a href="#" class="types-products">шины </a>
+		<a href="#" class="types-products">электроника</a>
+		<a href="#" class="types-products">инструменты</a>
+		<a href="#" class="types-products">аксессуары </a>
+	</div>
+	<div class="products-card-product" id="">
+		<a class="card-products card-products--sale" href="#">
+			<span class="hover-block">посмотреть товар</span>
+			<img class="card-products__img-heart" src="./img/icons/heart.svg" alt="heart">
+			<img class="card-products__img" src="./img/products/bbr-audio.png" alt="backpack">
+			<p class="card-products__text">BRP Audio-портативная система</p>
+			<span class="card-products__price">14 500 ₽</span>
+			<div class="card-products__img-wrapper">
+				<img src="./img/icons/basket-white.png" alt="basket-white">
+			</div>
+		
+		</a>
+		<a class="card-products" href="#">
+			<span class="hover-block">посмотреть товар</span>
+			<img class="card-products__img-heart" src="./img/icons/heart.svg" alt="heart">
+			<img class="card-products__img" src="./img/products/Garmain-echomap.png" alt="jacket">
+			<p class="card-products__text">Garmin Echomap Plus 62cv</p>
+			<span class="card-products__price">45 800 ₽</span>
+			<div class="card-products__img-wrapper">
+				<img src="./img/icons/basket-white.png" alt="basket-white">
+			</div>
+		
+		</a>
+		<a class="card-products card-products--sale" href="#">
+			<span class="hover-block">посмотреть товар</span>
+			<img class="card-products__img-heart" src="./img/icons/heart.svg" alt="heart">
+			<img class="card-products__img" src="./img/products/rf-key.png" alt="backpack">
+			<p class="card-products__text">RF D.E.S.S.TM Key</p>
+			<span class="card-products__price">12 000 ₽</span>
+			<div class="card-products__img-wrapper">
+				<img src="./img/icons/basket-white.png" alt="basket-white">
+			</div>
+		</a>
+		<a class="card-products" href="#">
+			<span class="hover-block">посмотреть товар</span>
+			<img class="card-products__img-heart" src="./img/icons/heart.svg" alt="heart">
+			<img class="card-products__img" src="./img/products/mens-suit.png" alt="backpack">
+			<p class="card-products__text">Мужской костюм 3мм</p>
+			<span class="card-products__price">7 000 ₽</span>
+			<div class="card-products__img-wrapper">
+				<img src="./img/icons/basket-white.png" alt="basket-white">
+			</div>
+		</a>
+		</div>
+</div>
+	</div>
+</div>
+</div>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__wrapper-form">
+						<p class="footer__text">Подпишитесь на нашу рассылку <br> и узнавайте о акция быстрее</p>
+						<form class="submit" action="">
+							<input class="iput-email" type="email" name="E-mail" placeholder="Введите ваш e-mail:">
+							<button class="button" type="submit">Отправить</button>
+						</form>
+					</div>
+				<ul class="information">
+					<li class="information-item"><p>Информация</p></li>
+					<li class="information-item"><a href="">О компании</a></li>
+					<li class="information-item"><a href="">Контакты</a></li>
+					<li class="information-item"><a href="">Акции</a></li>
+					<li class="information-item"><a href="">Магазины</a></li>
+				</ul>
+				<div class="information-mobile-accordeon">
+						<button class="accordeon"><span>Информация</span><img src="./img/arrow/Back.svg" alt="Back"></button> 
+					<ul class="information-mobile-accordeon__menu">					
+						<li class="information-item"><a href="">О компании</a></li>
+						<li class="information-item"><a href="">Контакты</a></li>
+						<li class="information-item"><a href="">Акции</a></li>
+						<li class="information-item"><a href="">Магазины</a></li></ul>
+				</div>
+
+				<ul class="shop">
+					<li class="shop-item"><p>Интернет-магазин</p></li>
+					<li class="shop-item"><a href="">Доставка и самовывоз</a></li>
+					<li class="shop-item"><a href="">Оплата</a></li>
+					<li class="shop-item"><a href="">Возврат-обмен</a></li>
+					<li class="shop-item"><a href="">Новости</a></li>
+				</ul>
+				<div class="shop-mobile-accordeon">
+					<button class="accordeon"><span>Интернет-магазин</span><img src="./img/arrow/Back.svg" alt="Back"></button> 
+				<ul class="information-mobile-accordeon__menu">					
+					<li class="information-item"><a href="">Доставка и самовывоз</a></li>
+					<li class="information-item"><a href="">Оплата</a></li>
+					<li class="information-item"><a href="">Возврат-обмен</a></li>
+					<li class="information-item"><a href="">Новости</a></li></ul>
+			</div>
+				<div class="link-img">
+					<a href="#" class="link-item">	
+						<svg class="instagram" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_58_1)">
+						<path d="M15.0046 7.29749C10.7509 7.29749 7.30713 10.745 7.30713 14.995C7.30713 19.2487 10.7546 22.6925 15.0046 22.6925C19.2584 22.6925 22.7021 19.245 22.7021 14.995C22.7021 10.7412 19.2546 7.29749 15.0046 7.29749ZM15.0046 19.9912C12.2434 19.9912 10.0084 17.755 10.0084 14.995C10.0084 12.235 12.2446 9.99874 15.0046 9.99874C17.7646 9.99874 20.0009 12.235 20.0009 14.995C20.0021 17.755 17.7659 19.9912 15.0046 19.9912Z"/>
+						<path d="M21.1848 0.095454C18.4248 -0.033296 11.5885 -0.027046 8.82605 0.095454C6.39855 0.209204 4.2573 0.795454 2.53105 2.5217C-0.353954 5.4067 0.0147958 9.29421 0.0147958 14.9955C0.0147958 20.8305 -0.310204 24.628 2.53105 27.4692C5.4273 30.3642 9.37104 29.9855 15.0048 29.9855C20.7848 29.9855 22.7798 29.9892 24.8235 29.198C27.6023 28.1192 29.6998 25.6355 29.9048 21.1742C30.0348 18.413 30.0273 11.578 29.9048 8.81546C29.6573 3.5492 26.831 0.355454 21.1848 0.095454ZM25.5535 25.5605C23.6623 27.4517 21.0385 27.283 14.9685 27.283C8.71854 27.283 6.2123 27.3755 4.38355 25.5417C2.2773 23.4455 2.65855 20.0792 2.65855 14.9755C2.65855 8.0692 1.9498 3.09545 8.88105 2.74045C10.4735 2.6842 10.9423 2.66545 14.951 2.66545L15.0073 2.70295C21.6685 2.70295 26.8948 2.00545 27.2085 8.93545C27.2798 10.5167 27.296 10.9917 27.296 14.9942C27.2948 21.1717 27.4123 23.693 25.5535 25.5605Z"/>
+						<path d="M23.0077 8.79245C24.0012 8.79245 24.8065 7.98712 24.8065 6.9937C24.8065 6.00027 24.0012 5.19495 23.0077 5.19495C22.0143 5.19495 21.209 6.00027 21.209 6.9937C21.209 7.98712 22.0143 8.79245 23.0077 8.79245Z"/>
+						</g>
+						<defs>
+						<clipPath id="clip0_58_1">
+						<rect width="30" height="30" fill="white"/>
+						</clipPath>
+						</defs>
+						</svg>
+					</a>
+					<a href="#" class="link-item">		
+						<svg class="vk" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M24.8938 16.285C24.4088 15.6725 24.5475 15.4 24.8938 14.8525C24.9 14.8462 28.9037 9.31375 29.3162 7.4375L29.3188 7.43625C29.5238 6.7525 29.3188 6.25 28.3275 6.25H25.0475C24.2125 6.25 23.8275 6.68125 23.6213 7.16375C23.6213 7.16375 21.9513 11.1613 19.5887 13.7525C18.8263 14.5012 18.4738 14.7413 18.0575 14.7413C17.8525 14.7413 17.5338 14.5013 17.5338 13.8175V7.43625C17.5338 6.61625 17.3 6.25 16.6087 6.25H11.4513C10.9275 6.25 10.6163 6.6325 10.6163 6.98875C10.6163 7.76625 11.7975 7.945 11.92 10.1325V14.8787C11.92 15.9187 11.7312 16.11 11.3125 16.11C10.1975 16.11 7.49125 12.0962 5.8875 7.5025C5.56375 6.61125 5.2475 6.25125 4.40625 6.25125H1.125C0.18875 6.25125 0 6.6825 0 7.165C0 8.0175 1.115 12.2562 5.185 17.8562C7.8975 21.6788 11.7175 23.75 15.1925 23.75C17.2812 23.75 17.5363 23.29 17.5363 22.4988C17.5363 18.8463 17.3475 18.5012 18.3937 18.5012C18.8787 18.5012 19.7137 18.7413 21.6637 20.585C23.8925 22.7712 24.2588 23.75 25.5063 23.75H28.7862C29.7212 23.75 30.195 23.29 29.9225 22.3825C29.2987 20.4738 25.0838 16.5475 24.8938 16.285Z"/>
+						</svg>
+					</a>
+					<a href="#" class="link-item">		
+							<svg class="facebook" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M17.4188 29.8048C17.2938 29.8252 17.1684 29.8439 17.0425 29.8611C17.1684 29.8439 17.2938 29.8252 17.4188 29.8048Z"/>
+						<path d="M17.7188 29.7535C17.659 29.7645 17.5993 29.7746 17.5396 29.7849C17.5993 29.7746 17.659 29.7645 17.7188 29.7535Z" />
+						<path d="M16.7072 29.9027C16.5609 29.9192 16.4137 29.9338 16.2661 29.9462C16.4137 29.9338 16.5609 29.9192 16.7072 29.9027Z"/>
+						<path d="M16.9952 29.8674C16.9249 29.8768 16.8542 29.8855 16.7837 29.8938C16.8542 29.8855 16.9249 29.8768 16.9952 29.8674Z"/>
+						<path d="M18.1271 29.6725C18.0745 29.6837 18.0216 29.6949 17.9688 29.7057C18.0216 29.6949 18.0745 29.6837 18.1271 29.6725Z"/>
+						<path d="M19.1404 29.4207C19.0978 29.4328 19.0553 29.4442 19.0127 29.4561C19.0553 29.4442 19.0978 29.4328 19.1404 29.4207Z"/>
+						<path d="M18.834 29.5045C18.7878 29.5166 18.7413 29.529 18.6948 29.5407C18.7413 29.529 18.7878 29.5169 18.834 29.5045Z"/>
+						<path d="M18.433 29.6047C18.384 29.6162 18.3346 29.6269 18.2852 29.6379C18.3346 29.6269 18.384 29.6162 18.433 29.6047Z" />
+						<path d="M16.2615 29.9467C16.1826 29.9533 16.1036 29.9592 16.0244 29.9645C16.1036 29.9592 16.1826 29.9533 16.2615 29.9467Z"/>
+						<path d="M30 15C30 6.717 23.283 0 15 0C6.717 0 0 6.717 0 15C0 23.283 6.717 30 15 30C15.0881 30 15.1758 29.9982 15.2637 29.9966V18.3197H12.041V14.564H15.2637V11.8002C15.2637 8.59497 17.2204 6.85043 20.0796 6.85043C21.4487 6.85043 22.6257 6.95251 22.9688 6.99806V10.348H20.9972C19.4417 10.348 19.1405 11.0873 19.1405 12.1719V14.564H22.8598L22.375 18.3197H19.1405V29.4205C25.4102 27.6231 30 21.8468 30 15Z">
+						<path d="M15.9911 29.9666C15.835 29.9766 15.6782 29.9846 15.521 29.9899C15.6782 29.9846 15.835 29.9766 15.9911 29.9666Z"/>
+						<path d="M15.5127 29.9904C15.4298 29.9931 15.3468 29.9952 15.2637 29.9965C15.3468 29.9952 15.4298 29.9931 15.5127 29.9904Z"/>
+						</svg>
+					</a>
+					<a href="#" class="link-item">			
+							<svg class="yotube" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M13.1318 17.8102L18.0111 15L13.1318 12.1898V17.8102Z"/>
+						<path d="M15 0C6.717 0 0 6.717 0 15C0 23.283 6.717 30 15 30C23.283 30 30 23.283 30 15C30 6.717 23.283 0 15 0ZM24.3727 15.0153C24.3727 15.0153 24.3727 18.0574 23.9868 19.5243C23.7705 20.3272 23.1374 20.9603 22.3345 21.1764C20.8676 21.5625 15 21.5625 15 21.5625C15 21.5625 9.14772 21.5625 7.66548 21.161C6.86256 20.945 6.22948 20.3117 6.01318 19.5087C5.62706 18.0574 5.62706 15 5.62706 15C5.62706 15 5.62706 11.9582 6.01318 10.4913C6.22925 9.68834 6.8779 9.03969 7.66548 8.82362C9.13239 8.4375 15 8.4375 15 8.4375C15 8.4375 20.8676 8.4375 22.3345 8.83896C23.1374 9.05502 23.7705 9.68834 23.9868 10.4913C24.3883 11.9582 24.3727 15.0153 24.3727 15.0153Z"/>
+						</svg>
+					</a>			
+				</div>
+				</div>
+				<div class="documents">
+					<a class="documents__items" href=""><span>Договор оферты</span></a>
+					<a class="documents__items" href=""><span>Политика обработки персональных данных</span></a>
+				</div>
+			</div>
+		</footer>
+		<!-- vendor scripts -->
+		<script src="./libs/jquery/jquery-3.6.0.js"></script>
+		<script src="./libs/OwlCarousel2/owl.carousel.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+		<script src="./js/main.js"></script>
+		<script>var more = document.getElementById("more");
+			console.log(more);
+			var btn = document.getElementById("show-more");
+			console.log(btn);
+		btn.onclick = function(){
+		  more.classList.toggle("none");
+		  btn.classList.toggle("")
+		};</script>
+	</body>
+</html>

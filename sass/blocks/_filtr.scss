@@ -1,0 +1,323 @@
+.wrapper-filter {
+    margin-right: 40px;
+    display: block;
+    max-width: 291px;
+    flex-shrink: 0;
+    @media (max-width: 1400px) {
+        margin-right: 10px;
+        }
+    @media (max-width: 1000px) {
+        margin-right: 5px;
+        width: 250px;
+        }
+        /* Mobile XS */
+        @media (max-width: 599px) {
+        display: none;
+        }
+}
+
+.filtr {
+    width: 100%;
+}
+.tabs { width: 100%; padding: 0px; margin: 0 auto; }
+.tabs>input { display: none; }
+.tabs>div {
+    display: none;
+    padding: 8px 0;
+    background: #ffffff;
+}
+.tabs>label {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #C4C4C4;
+    cursor: pointer;
+}
+.tabs .gap {
+    display:inline-block;
+    width: 42px;
+    /* Tablet */
+    @media (max-width: 1199px) {
+    // width: 18px;
+    }
+}
+.tabs>input:checked + label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase; 
+    color: #2F3035;
+
+    border-bottom: 2px solid #1C62CD;
+}
+#tab_1:checked ~ #txt_1 { display: block; }
+#tab_2:checked ~ #txt_2 { display: block; }
+#tab_3:checked ~ #txt_3,
+#tab_4:checked ~ #txt_4 { display: block; }
+
+.search-parameters {
+}
+
+.details{
+    display:block;
+    padding-bottom: 40px;
+    background: #fff;
+    width:100%;
+    overflow:hidden;
+  }
+  .click::-webkit-details-marker{display:none;}
+  .click::-moz-list-bullet{list-style-type:none;}
+  .click::marker{display:none;} 
+  .click {
+     display:block;
+     cursor: pointer;
+     position: relative;
+
+     font-weight: 600;
+     font-size: 16px;
+     line-height: 19px;
+     color: #2F3035;
+  }
+  .click:before {  
+    top: .4em;
+    right: .3em;
+    color: transparent;
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTYuNTkgOC41OUwxMiAxMy4xNyA3LjQxIDguNTkgNiAxMGw2IDYgNi02eiIvPjxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=") no-repeat 50% 50% / 1em 1em;
+    width: 1em;
+    height: 1em;  
+    content: "";
+    position: absolute;
+    transition: transform .5s;
+  }
+  .details[open] > .click:before {
+    transform: scale(1,-1);
+  }
+  .click ~ * {
+  }
+  .details[open] .click ~ *{ 
+    animation: sweep .5s ease-in-out;
+  }
+  @keyframes sweep {
+    0%    {opacity: 0;}
+    100%  {opacity: 1;}
+  }
+  .click:focus {
+    outline:0;
+}
+  .availability {
+    display: flex;
+    padding-top: 19px;
+    column-gap: 52px;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.new-products {
+    display: flex;
+    column-gap: 19px;
+    padding-top: 19px;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.real-checkbox {
+    width: 0; 
+    height: 0;
+    opacity: 0;
+    z-index: -1;
+}
+
+.real-checkbox:focus + .custom-checkbox {
+    border: 1px solid #00000054;
+    background: #C4C4C4;
+}
+
+.real-checkbox:checked + .custom-checkbox::before {
+    transform: scale(1);
+}
+
+.custom-checkbox {
+    position: relative;
+    display: inline-block;
+    margin-right: 12px;
+    width: 14px;
+    height: 14px;
+    vertical-align:sub;
+    border: 1px solid #C4C4C4;
+    border-radius: 1px;
+    mix-blend-mode: normal;
+    vertical-align: baseline;
+    // opacity: 0.54;
+}
+
+.custom-checkbox::before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    margin-top: -1px;
+    margin-left: -1px;
+    background-image: url("../../img/icons/check.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: scale(0);
+    transition: 0.1s ease-out;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+.power {
+    display: flex;
+    justify-content:flex-start;
+}
+
+.power li {
+    padding-top: 19px;
+    width: 68px;
+}
+
+.power li .select {
+    padding-left: 10px;
+    padding-right: 0;
+}
+
+.speed {
+    display: flex;
+    justify-content:flex-start;
+}
+
+.speed li {
+    padding-top: 19px;
+    width: 68px;
+}
+
+.speed li .select {
+    padding-left: 10px;
+    padding-right: 0;
+}
+.brand {
+    width: 259px;
+    padding-top: 19px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 91px;
+    row-gap: 19px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.model-range {
+    padding-top: 19px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 15px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.model-input {
+    margin-top: 20px;
+    padding: 8px 50px 8px 20px;
+    width: 285px;
+    border: 1px solid #E0E0E0;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+
+}
+
+.model-input::placeholder {
+    color: #BDBEC2;
+}
+
+.more-btn-btn {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+    color: #1C62CD;
+}
+
+.stocks {
+    padding-top: 19px;
+    display: flex;
+    column-gap: 10px;
+}
+.stocks__item {
+    padding: 0 8px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 0.07em;
+    color: #C4C4C4;
+}
+
+.stocks__item:hover {
+    background: #2F3035;
+    color: #FFFFFF;
+}
+
+.stocks__item:focus {
+    background: #1C62CD;
+    color: #FFFFFF;
+}
+
+.country {
+    padding-top: 19px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 64px;
+    row-gap: 20px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.country li {
+    display: inline-block;
+    width: 98px;
+}
+
+.submit-btn {
+    display: inline-block;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    width: 252px;
+    background: #F0F0F4;
+}
+
+.submit-btn:hover {
+    background: #2F3035;
+    color: #FFFFFF;
+}
+
+.submit-btn:active {
+    background: #1C62CD;
+    color: #FFFFFF;
+}

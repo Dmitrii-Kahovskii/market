@@ -1,0 +1,388 @@
+.products {
+    padding-bottom: 97px;
+    /* Tablet */
+    @media (max-width: 1199px) {
+    padding-bottom: 10px;
+    }
+/* Mobile XS */
+@media (max-width: 599px) {
+
+}
+}
+
+.title {
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    /* Mobile */
+    @media (max-width: 899px) {
+    font-size: 22px;
+    }
+}
+.products-types-products {
+    margin-bottom: 25px;
+    display: flex;
+    column-gap: 50px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    /* Mobile */
+    @media (max-width: 899px) {
+    column-gap: 30px;
+    }
+    /* Mobile XS */
+    @media (max-width: 599px) {
+    flex-wrap: wrap;
+    column-gap: 10px;
+    justify-content: flex-start;
+    }
+}
+.types-products {
+    &:hover {
+        margin-bottom: -2px;
+        border-bottom: 2px solid #1C62CD;
+    }
+}
+
+// КАРТОЧКИ ТОВАРОВ
+.products__card-product-wrapper {
+    position: relative;
+}
+.products-card-product.row-product {
+    column-gap: 28px;
+        @media (max-width: 1400px) {
+            column-gap: 15px;
+}
+        /* Tablet */
+        @media (max-width: 1199px) {
+            column-gap: 10px;
+}
+}
+.products-card-product {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap:28px;
+    row-gap: 28px;
+    z-index: 1;
+    /* Tablet */
+    @media (max-width: 1199px) {
+    column-gap: 4px;
+    }
+    /* Mobile */
+    @media (max-width: 899px) {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 25px;
+    row-gap: 30px;
+    }
+    /* Mobile XS */
+    @media (max-width: 599px) {
+    width: 290px;
+    margin-top: 35px;
+    }
+}
+
+.products-card-btn {
+    display: none;
+    position: absolute;
+    top: 50%;
+    z-index: 9;
+    /* Mobile XS */
+    @media (max-width: 599px) {
+    display: none;
+    }
+}
+.products-card-btn-left {
+    left: -36px;
+    /* Tablet */
+    @media (max-width: 1199px) {
+    left: -1px;
+    }
+    /* Mobile */
+    @media (max-width: 899px) {
+    left: 3px;
+    }
+}
+.products-card-btn-right {
+    right: -16px;
+    /* Tablet */
+    @media (max-width: 1199px) {
+    right: 0px;
+    }
+    /* Mobile */
+    @media (max-width: 899px) {
+    right: 25px;
+    }
+}
+.card-products {
+    display: flex;
+    flex-direction: column;
+    width: 271px;
+    position: relative;
+    border: 1px solid #CDCDCD;
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 52px;
+    padding-left: 23px;
+    padding-right: 19px;
+    padding-bottom: 31px;
+    transition: 0.2s ease;
+    &:hover {
+        background: #FFFFFF;
+        box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+        border-radius: 3px;
+        .card-products__text {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            color: #1C62CD;
+        }
+        .card-products__price {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 36px;
+            color: #1C62CD;
+        }
+        .hover-block {
+            display: flex;
+            transition: 1s ease;
+        }
+    }
+    /* Tablet */
+    @media (max-width: 1199px) {
+    width: 215px;
+    padding-right: unset;
+    padding-left: unset;
+    }
+    /* Mobile */
+    @media (max-width: 899px) {
+    width: 260px;
+    }
+        /* Mobile XS */
+     @media (max-width: 599px) {
+    width: 290px;
+                }
+}
+
+.hover-block {
+    display: none;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 122px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    padding: 18px 17px 22px 21px;
+    background: #FFFFFF;
+    opacity: 0.9;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    transition: 1s ease;
+}
+
+.card-products--sale::before {
+    content: "sale";
+    display: inline-block;
+    width: 63px;
+    height: 25px;
+    padding: 6px 8px 15px ;
+    background: #1C62CD;
+
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+}
+.card-products__img-heart {
+    position: absolute;
+    top: 16px;
+    right: 19px;
+}
+.card-products__img {
+    align-self: center;
+    margin-bottom: 14px;
+    height: 200px;
+}
+.card-products__text {
+    min-width: 230px;
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    transition: 0.2s ease;
+    /* Tablet */
+    @media (max-width: 1199px) {
+    font-size: 16px;
+    height: 42px;
+    min-width: unset;
+    }
+}
+.card-products__price {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    transition: 0.2s ease;
+    /* Tablet */
+    @media (max-width: 1199px) {
+    font-size: 24px;
+    }
+    /* Mobile XS */
+    @media (max-width: 599px) {
+    
+    }
+}
+.card-products__img-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10px 8px 14px 16px;
+    width: 60px;
+    height: 40px;
+    background: #1C62CD;
+    border-radius: 10px 0px 0px 0px;
+}
+
+.products__wrapper-show-more {
+    margin-top: 35px;
+    text-align: center;
+}
+.show-more {
+    padding-top: 17px;
+    padding-bottom: 15px;
+    padding-left: 43px;
+    padding-right: 43px;
+
+    background: #F0F0F4;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        width: 252px;
+    }
+}
+
+#more {
+    margin-top: 30px;
+}
+
+// СКИДКИ КАРТА
+.discounts {
+    margin-top: 86px;
+    margin-bottom: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 28px;
+    padding-bottom: 29px;
+    background: #1C62CD;
+    /* Tablet */
+    @media (max-width: 1199px) {
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+    /* Mobile */
+    @media (max-width: 899px) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    }
+    /* Mobile XS */
+    @media (max-width: 599px) {
+    flex-direction: column-reverse;
+    }
+}
+.discounts__img-wrapper {
+    display: flex;
+    margin-right: 46px;
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        margin-right: 0;
+        justify-content: space-between;
+column-gap: 140px;
+    }
+}
+
+.discounts__img {
+/* Mobile XS */
+@media (max-width: 599px) {
+width: 66px;
+}
+}
+
+.discounts__wrapper-text {
+    display: flex;
+    /* Mobile XS */
+    @media (max-width: 599px) {
+flex-direction: column;
+margin-bottom: -50px;
+align-items: center;
+    }
+}
+.discounts__title {
+    margin-right: 46px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    color: #FFFFFF;
+    /* Tablet */
+    @media (max-width: 1199px) {
+        margin-right: 20px;
+        font-size: 26px;
+        line-height: 26px;
+    }
+    /* Mobile */
+    @media (max-width: 899px) {
+    font-size: 22px;
+    line-height: 24px;
+    }
+    /* Mobile XS */
+    @media (max-width: 599px) {
+        margin-right: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    }
+}
+.discounts__button {
+    display: inline-block;
+    align-self:center;
+    flex-basis:auto;
+    padding-left: 41px;
+    padding-right: 41px;
+    background: #FFFFFF;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 57px;
+    /* Tablet */
+    @media (max-width: 1199px) {
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: unset;
+    }
+    /* Mobile */
+    @media (max-width: 899px) {
+    font-size: 14px;
+flex-shrink: 0;
+margin-right: 40px;
+    }
+    /* Mobile XS */
+    @media (max-width: 599px) {
+    margin-right: 0;
+    }
+}
+
+.they-also-buy {
+}

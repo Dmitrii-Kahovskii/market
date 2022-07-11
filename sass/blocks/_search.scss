@@ -1,0 +1,197 @@
+.search {
+    padding-bottom: 80px;
+    /* Tablet */
+    @media (max-width: 1199px) {
+    padding-bottom: 50px;
+    }
+}
+.type-search {
+    display: flex;
+    column-gap: 55px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    & label:hover {
+    background: #F0F0F4;
+    border-radius: 5px;
+    // margin-left: -31px;
+    // margin-right: -31px;
+    // padding-left: 26px;
+    // padding-right: 26px;
+
+    // font-weight: 700;
+
+    /* Mobile */
+    @media (max-width: 899px) {
+    font-size: 16px;
+    }
+    }
+    & label:checked {
+        background: #F0F0F4;
+    }
+    /* Mobile */
+    @media (max-width: 899px) {
+    font-size: 16px;
+    margin-bottom: 10px;
+    }
+    /* Mobile XS */
+    @media (max-width: 599px) {
+    font-size: 14px;
+    line-height: 14px;
+    column-gap: 20px;
+    }
+}
+.number {
+
+    width: 0;
+}
+.mark {
+    width: 0;
+}
+.name {
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0;
+}
+
+.form {
+display: flex;
+margin-bottom: 80px;
+/* Tablet */
+@media (max-width: 1199px) {
+margin-bottom: 50px;
+}
+/* Mobile XS */
+@media (max-width: 599px) {
+position: relative;
+}
+}
+
+.input {
+    display: block;
+    width: 100%;
+    background: #F0F0F4;
+    border-radius: 3px;
+    padding-left: 20px;
+    /* Mobile XS */
+    @media (max-width: 599px) {
+    height: 50px;
+    }
+}
+
+.button {
+    width: 145px;
+    height: 50px;
+    background: #1C62CD;
+    border-radius: 3px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    /* Tablet */
+    @media (max-width: 1199px) {
+    height: 39px;
+    width: 121px;
+    font-weight: 400;
+    }
+    /* Mobile */
+    @media (max-width: 899px) {
+    height: 30px;
+    }
+    /* Mobile XS */
+    @media (max-width: 599px) {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+
+    width: 100px;
+    padding-left: 5px;
+    padding-right: 5px;
+    }
+}
+
+.button--none {
+    /* Mobile XS */
+    @media (max-width: 599px) {
+    display: none;
+    }
+}
+
+.button-img {
+    display: none;
+    /* Mobile XS */
+    @media (max-width: 599px) {
+    display: flex;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    }
+}
+
+// ТОВАРЫ ПО ГРУППАМ
+.load-type {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+    /* Tablet */
+    @media (max-width: 1199px) {
+    justify-content: center;
+    }
+}
+
+.load-type .card:last-child .text {
+    margin-right: 50px;
+}
+.card {
+    display: flex;
+    column-gap: 13px;
+    background: #FFFFFF;
+
+    width: 370px;
+    padding-left: 20px;
+    padding-right: 38px;
+    padding-top: 20px;
+    padding-bottom: 7px;
+
+    border: 1px solid #CDCDCD;
+    border-radius: 3px;
+    transition: 0.2s ease;
+    &:hover {
+        background: #FFFFFF;
+        box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+        border-radius: 3px;
+    }
+}
+
+.text {
+    margin-right: 13px;
+    /* Mobile XS */
+    @media (max-width: 599px) {
+    margin-right: 0;
+    }
+}
+
+.text p {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 28px;
+    margin-bottom: 52px;
+    /* Mobile XS */
+    @media (max-width: 599px) {
+    font-size: 14px;
+    }
+}
+
+.text span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #C4C4C4;
+}

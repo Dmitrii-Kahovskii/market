@@ -1,0 +1,229 @@
+.specification-table {
+}
+
+.specification-table .header-bottom .nav-bottom {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2F3035;
+    column-gap: 80px;
+    transition: 0.2s ease;
+    /* Tablet */
+    @media (max-width: 1199px) {
+    font-size: 16px;
+    column-gap: 55px;
+    }
+}
+.nav-bottom {
+}
+.nav-bottom_item {
+}
+
+.choice-delivery {
+    display: flex;
+    align-items: center;
+
+    margin-right: 17px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: hsl(230, 6%, 70%);
+    /* Mobile XS */
+    @media (max-width: 599px) {
+    flex-direction: column;
+    row-gap: 10px;
+    margin-right: 0;
+    }
+}
+.choice-delivery__item p {
+    margin-right: 17px;
+    /* Mobile XS */
+    @media (max-width: 599px) {
+    margin-right: 0;
+    }
+}
+
+.choice-delivery__item input[type = search] {
+    width: 313px;
+    height: 33px;
+    padding-left: 17px;
+
+    background: #F0F0F4;
+    border-radius: 3px;
+    /* Tablet */
+    @media (max-width: 1199px) {
+    width: 254px;
+    }
+    /* Mobile */
+    @media (max-width: 899px) {
+    width: 200px;
+    }
+}
+
+.choice-delivery__item:nth-child(2) {
+    position: relative;
+    margin-right: 155px;
+    /* Mobile */
+    @media (max-width: 899px) {
+    margin-right: 50px;
+    }
+    /* Mobile XS */
+    @media (max-width: 599px) {
+    margin-right: 0;
+    }
+}
+
+.choice-delivery__item:nth-child(2)::after {
+    content: url(../../img/icons/search.svg);
+
+    position: absolute;
+    right: 12px;
+    transform: translateY(8px);
+
+}
+
+.choice-delivery__item:nth-child(3) {
+    margin-right: 55px;
+    /* Mobile XS */
+    @media (max-width: 599px) {
+    margin-right: 0;
+    }
+}
+
+.choice-delivery__item input[type = checkbox] {
+    vertical-align:baseline;
+    border: 5px solid red;
+}
+
+.availability-address {
+    margin-top: 50px;
+}
+.availability-address-header {
+    margin-bottom: 41px;
+    display: flex;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2F3035;
+    /* Mobile */
+    @media (max-width: 899px) {
+    font-size: 18px;
+    }
+     /* Mobile XS */
+    @media (max-width: 599px) {
+    margin-bottom: 20px;
+    }
+}
+
+.availability-address-header__item:first-child {
+    margin-right: 243px;
+    /* Mobile */
+    @media (max-width: 899px) {
+    margin-right: 179px;
+    }
+    /* Mobile XS */
+    @media (max-width: 599px) {
+    margin-right: 49px;
+    }
+}
+.availability-address-header__item:last-child {
+    /* Mobile */
+    @media (max-width: 899px) {
+    display: none;
+    }
+}
+
+.availability-address-header__item {
+    margin-right: 123px;
+    /* Mobile XS */
+    @media (max-width: 599px) {
+    margin-right: 32px;
+    }
+}
+.availability-description-wrapper {
+    margin-bottom: 120px;
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2F3035;
+    opacity: 0.7;
+    /* Tablet */
+    @media (max-width: 1199px) {
+    margin-bottom: 70px;
+    }
+}
+.availability-description-address {
+    width: 219px;
+    margin-right: 81px; 
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 65px;
+    /* Mobile */
+    @media (max-width: 899px) {
+    margin-right: 21px;
+    }
+}
+
+.availability-description-chart {
+    margin-right: 128px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    /* Tablet */
+    @media (max-width: 1199px) {
+    margin-right: 60px;
+    }
+    /* Mobile */
+    @media (max-width: 899px) {
+    row-gap: 16px;
+    }
+    /* Mobile XS */
+    @media (max-width: 599px) {
+    margin-right: 32px;
+    }
+}
+
+.availability-description__item {
+   
+}
+
+.availability-description-available {
+    margin-right: 105px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 69px;
+    /* Mobile */
+    @media (max-width: 899px) {
+    margin-right: 41px;
+    row-gap: 60px;
+    }
+    /* Mobile XS */
+    @media (max-width: 599px) {
+    row-gap: 99px;
+    }
+}
+
+.availability-description-quantity {
+    display: flex;
+    flex-direction: column;
+    row-gap: 69px;
+    /* Mobile XS */
+    @media (max-width: 599px) {
+    display: none;
+    }
+}
+
+.they-also-buy-wrapper {
+padding-bottom: 30px;
+/* Mobile */
+@media (max-width: 899px) {
+padding-bottom: 0;
+}
+}
+
+
+
